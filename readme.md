@@ -3,11 +3,9 @@
 ### Настройки
 
 Перед началом работы:
-
 ```
 sudo apt install git
 git --version
-
 ```
 
 ```
@@ -19,17 +17,17 @@ node_modules/
 build
 и тд.
 Каждый файл или директория указываются с новой строки
-
 ```
 
-{Allias} - Добавьте следующее в файл .gitconfig в вашем \$HOME каталоге.
+Allias - Добавьте следующее в файл .gitconfig в вашем \$HOME каталоге.
 
 ФАЙЛ: .gitconfig
+```
 [alias]
 co = checkout
 cb = checkout -b
 ci = commit -m
-a = add .
+a = add
 cia = commit --amend -m
 po = push origin
 st = status
@@ -37,6 +35,7 @@ br = branch
 hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 type = cat-file -t
 dump = cat-file -p
+```
 
 ### Просмотр изменений
 
